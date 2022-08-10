@@ -1,5 +1,5 @@
 locals {
-  inventory = templatefile("templates/inventory.tpl", {
+  inventory = templatefile("${path.module}/templates/inventory.tpl", {
     all_nodes          = concat(var.bastion_nodes, var.controlplane_nodes, var.worker_nodes)
     enable_bastion     = var.enable_bastion
     bastion_nodes      = var.bastion_nodes
