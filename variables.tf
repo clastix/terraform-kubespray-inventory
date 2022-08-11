@@ -24,3 +24,9 @@ variable "ssh_user" {
   description = "The name of the user used to access via SSH to the nodes"
   type        = string
 }
+
+variable "ssh_private_key_file" {
+  description = "The name of the user used to access via SSH to the nodes"
+  type        = string
+  default     = ""
+}
