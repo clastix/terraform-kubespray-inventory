@@ -1,4 +1,5 @@
 enable_bastion = true
+enable_vip_keepalived = false
 bastion_nodes = [{
   name = "bs0"
   ip   = "127.0.0.1"

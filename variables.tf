@@ -4,6 +4,12 @@ variable "enable_bastion" {
   default     = false
 }
 
+variable "enable_vip_keepalived" {
+  description = "Whether to enable the Keepalived configuration for VIP"
+  type        = bool
+  default     = false
+}
+
 variable "bastion_nodes" {
   description = "A list of bastion VM objects ({name string, ip string})"
   type        = list(any)

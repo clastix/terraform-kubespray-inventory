@@ -8,10 +8,12 @@ all:
     ansible_ssh_common_args: |
       -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null %{ if ssh_private_key_file != "" }-i ${ssh_private_key_file}%{ endif }'
 %{ endif }
+%{ if enable_vip_keepalived }
     vip_iface: <>
     vip_ip: <>
     vip_netmask: <>
     vip_port: <>
+%{ endif }
 
   hosts:
 %{ for node in all_nodes }
