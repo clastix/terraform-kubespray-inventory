@@ -3,13 +3,16 @@ enable_vip_keepalived = false
 bastion_nodes = [{
   name = "bs0"
   ip   = "127.0.0.1"
+  ansible_host   = "127.0.0.1"
 }]
 controlplane_nodes = [{
   name = "cp0"
   ip   = "127.0.0.1"
+  ansible_host   = "127.0.0.1"
 }]
 worker_nodes = [{
   name = "wk0"
   ip   = "127.0.0.1"
+  ansible_host   = "127.0.0.1"
 }]
 ssh_user = "ubuntu"
