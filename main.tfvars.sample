@@ -1,5 +1,5 @@
 enable_bastion = true
-enable_vip_keepalived = false
+external_apiserver_address = 1.2.3.4
 bastion_nodes = [{
   name = "bs0"
   ip   = "127.0.0.1"

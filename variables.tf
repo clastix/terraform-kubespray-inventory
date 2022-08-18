@@ -4,10 +4,10 @@ variable "enable_bastion" {
   default     = false
 }
 
-variable "enable_vip_keepalived" {
-  description = "Whether to enable the Keepalived configuration for VIP"
-  type        = bool
-  default     = false
+variable "external_apiserver_ip" {
+  description = "An external IP address for the API server to be used for kubeconfig building"
+  type        = string
+  default     = ""
 }
 
 variable "bastion_nodes" {
